@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fct_salesorderdetail
+    columns:
+      - name: id_salesorder
+        description: The primary key of the order
+
+      - name: fk_product
+        description: The foreign key to the product dimension table

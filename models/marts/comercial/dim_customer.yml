@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_customer
+    columns:
+      - name: sk_customer
+        description: Primary key of the customer
+        tests:
+          - unique
+          - not_null
+
+      - name: firstname
+        description: First customer name
+        test:
+          - not_null
+          
+          

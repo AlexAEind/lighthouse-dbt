@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim address
+    columns:
+      - name: sk address
+        description: Primary key of the address
+        tests:
+          - unique
+          - not_null
+          
