@@ -4,16 +4,21 @@ models:
   - name: fct_salesorderheader
     columns:
       - name: id_salesorder
-        description: The primary key of the order
+        description: The primary key of the order.
+        tests:
+          - not_null
 
       - name: fk_reason
-        description: The foreign key to the reason dimension table
+        description: The foreign key to the reason dimension table.
 
       - name: fk_address
-        description: The foreign key to the location dimension table
+        description: The foreign key to the location dimension table.
 
       - name: fk_customer
-        description: The foreign key to the customer dimension table
+        description: The foreign key to the customer dimension table.
+        tests:
+          - not_null
 
       - name: fk_creditcard
-        description: The foreign key to the credit card dimension table
+        description: The foreign key to the credit card dimension table.
+

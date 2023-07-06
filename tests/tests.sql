@@ -4,9 +4,10 @@ with
     unitprice_test as(
         select
             unitprice
-        from {{ ref('fct_salesorder') }}
+        from {{ ref('fct_salesorderdetail') }}
     )
     
 select *
 from unitprice_test
 where unitprice < 0
+
